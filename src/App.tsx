@@ -7,7 +7,13 @@ const Home = React.lazy(() => import("./page"));
 function App() {
   return (
     <div className='App'>
-      <Suspense fallback={<Spinner />}>
+      <Suspense
+        fallback={
+          <div className='h-screen'>
+            <Spinner />
+          </div>
+        }
+      >
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/:id' element={<Detail />} />
