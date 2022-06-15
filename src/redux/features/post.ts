@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Post, PostsResponse } from "../../model/data";
 
-const baseUrl = "http://localhost:8000/api";
+const baseUrl = process.env.REACT_APP_URL;
 
 export const getPostsFetch = createAsyncThunk(
   "/posts",
