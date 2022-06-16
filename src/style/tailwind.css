@@ -4,16 +4,15 @@
 
 @layer base {
   .html a {
-    @apply inline-block transition-all duration-75 font-medium underline text-gray-600 opacity-70;
+    @apply inline-block transition-all duration-75 font-medium underline opacity-70;
   }
 
   .html h2 {
-    @apply font-bold text-xl mt-6 mb-2 text-gray-700;
+    @apply font-bold text-xl mt-6 mb-2;
   }
 
   .html p,
   .html li {
-    @apply text-gray-600;
   }
 
   .html li {

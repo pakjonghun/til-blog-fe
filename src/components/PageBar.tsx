@@ -39,7 +39,7 @@ const PageBar: React.FC<props> = ({ totalPage }) => {
   );
 
   return (
-    <ul className='grid grid-cols-[1fr_17rem_1fr] gap-5 place-items-center w-fit mx-auto text-gray-500 text-sm font-medium'>
+    <ul className='grid grid-cols-[1fr_17rem_1fr] gap-5 place-items-center min-h-[17vh] w-fit mx-auto text-gray-50 text-sm font-medium'>
       <li
         onClick={onPreviousClick}
         className='hover:scale-110 active:scale-100 transition-all duration-75 cursor-pointer'

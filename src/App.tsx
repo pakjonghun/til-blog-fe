@@ -9,7 +9,7 @@ function App() {
     <div className='App'>
       <Suspense
         fallback={
-          <div className='flex items-center justify-center h-screen'>
+          <div className='flex items-center justify-center h-screen bg-slate-800'>
             <Spinner />
           </div>
         }

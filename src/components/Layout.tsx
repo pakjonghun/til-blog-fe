@@ -11,7 +11,7 @@ const Layout: React.FC<props> = ({ children, ...props }) => {
   return (
     <section>
       <Navigation {...props} />
-      {children}
+      <article className='bg-slate-800'>{children}</article>
     </section>
   );
 };

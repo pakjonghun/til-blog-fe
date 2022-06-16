@@ -23,19 +23,19 @@ const Home = () => {
 
   if (error) toast.error("오류 발생");
   return (
-    <Layout title='TilBlog'>
-      <header className='mt-5 mx-auto w-fit'>
+    <Layout title='Today I Learn'>
+      <header className='w-fit min-h-[10vh] pt-5 mx-auto '>
         <Search />
         <Hashs />
       </header>
-      <main className='space-y-10'>
+      <main>
         {isLoading ? (
-          <div className='flex items-center justify-center h-[70vh]'>
+          <div className='flex items-center justify-center min-h-[84vh]'>
             <Spinner />
           </div>
         ) : (
           <>
-            <div className='max-w-screen-xl  mx-auto w-fit h-[65vh] pt-5'>
+            <div className='max-w-screen-xl min-h-[67vh] mx-auto w-fit pt-12'>
               <div className='gap-3 place-items-center grid grid-cols-2 px-5 overflow-y-auto'>
                 {posts &&
                   posts.posts?.map(({ id, head: { date } }) => {

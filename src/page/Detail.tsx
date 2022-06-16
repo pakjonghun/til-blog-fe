@@ -25,7 +25,7 @@ const Detail = () => {
   const result = md.render(post?.body || "");
   return (
     <Layout canBack={true} title='Detail'>
-      <article className='mx-auto h-[55rem] px-[10%] overflow-y-auto max-w-[70rem]'>
+      <article className='mx-auto min-h-[94vh] h-[55rem] px-[10%] overflow-y-auto max-w-[70rem] text-gray-50'>
         <div className='html' dangerouslySetInnerHTML={{ __html: result }} />
       </article>
     </Layout>
