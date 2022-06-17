@@ -24,11 +24,11 @@ const Home = () => {
   if (error) toast.error("오류 발생");
   return (
     <Layout title='Today I Learn'>
-      <header className='w-fit min-h-[10vh] pt-5 mx-auto '>
+      <header className='w-fit min-h-[10vh] pt-5 mx-auto'>
         <Search />
         <Hashs />
       </header>
-      <main>
+      <main className='min-h-[84vh]'>
         {isLoading ? (
           <div className='flex items-center justify-center min-h-[84vh]'>
             <Spinner />

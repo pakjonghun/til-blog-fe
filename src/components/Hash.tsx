@@ -15,10 +15,19 @@ const Hashs = () => {
   );
 
   return (
-    <ul className='flex items-center space-x-3 pl-3 py-3 text-sm font-bold text-gray-50'>
+    <ul className='flex items-center space-x-3 pl-3 py-3 text-sm font-bold text-gray-500'>
       <li>태그 :</li>
-      {["til", "webpack", "tailwind", "algo"].map((hash) => (
-        <li className='hover:text-gray-800' key={hash}>
+      {[
+        "til",
+        "webpack",
+        "tailwind",
+        "recoil",
+        "redux",
+        "algo",
+        "nestjs",
+        "typeorm",
+      ].map((hash) => (
+        <li className='hover:text-gray-50' key={hash}>
           <button onClick={() => onHashClick(hash)}>{hash}</button>
         </li>
       ))}
